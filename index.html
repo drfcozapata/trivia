@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="author" content="Francisco Zapata" />
+		<link rel="stylesheet" href="./assets/css/styles.css" />
+		<title>Trivia</title>
+	</head>
+	<body>
+		<img src="./assets/img/logo-trivia.png" alt="Logo Trivia" class="logo" />
+		<!-- <h1>Trivia</h1> -->
+		<main>
+			<div class="trivia">
+				<form action="" id="trivia-form" class="container">
+					<div class="form-items">
+						<div class="form-item">
+							<label for="amount">Número de Preguntas</label>
+							<input type="number" id="amount" value="0" />
+						</div>
+						<div class="form-item">
+							<label for="difficulty">Dificultad</label>
+							<select name="" id="difficulty">
+								<option value="0">Cualquier tipo</option>
+								<option value="easy">Fácil</option>
+								<option value="medium">Médio</option>
+								<option value="hard">Difícil</option>
+							</select>
+						</div>
+						<div class="form-item">
+							<label for="type">Tipo de Preguntas</label>
+							<select name="" id="type">
+								<option value="0">Cualquier tipo</option>
+								<option value="boolean">Verdadero/Falso</option>
+								<option value="multiple">Selección Múltiple</option>
+							</select>
+						</div>
+						<div class="form-item">
+							<label for="category">Categoría</label>
+							<select name="" id="category">
+								<option value="0">Cualquier categoría</option>
+								<option value="9">Cultura general</option>
+								<option value="10">Libros</option>
+								<option value="11">Películas</option>
+								<option value="12">Música</option>
+								<option value="13">Musicales y teatros</option>
+								<option value="14">Televisión</option>
+								<option value="15">Videojuegos</option>
+								<option value="16">Juegos de mesa</option>
+								<option value="17">Ciencia y naturaleza</option>
+								<option value="18">Computación</option>
+								<option value="19">Matemáticas</option>
+								<option value="20">Mitología</option>
+								<option value="21">Deportes</option>
+								<option value="22">Geografía</option>
+								<option value="23">Historia</option>
+								<option value="24">Política</option>
+								<option value="25">Arte</option>
+								<option value="26">Celebridades</option>
+								<option value="27">Animales</option>
+								<option value="28">Autos</option>
+								<option value="29">Comics</option>
+								<option value="30">Gadgets</option>
+								<option value="31">Ánime y manga</option>
+								<option value="32">Caricaturas</option>
+							</select>
+						</div>
+					</div>
+					<div class="form-item">
+						<input type="submit" value="¡Empezar!" id="formButton" />
+					</div>
+				</form>
+			</div>
+			<div class="trivia-questions hidden">
+				<div id="trivia-questions"></div>
+			</div>
+		</main>
+
+		<footer>
+			<div class="footer">
+				<p>
+					Creada por Francisco Zapata &copy; 2021 Todos los derechos reservados
+				</p>
+			</div>
+		</footer>
+
+		<script src="./assets/js/app.js"></script>
+	</body>
+</html>
